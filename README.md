@@ -23,7 +23,7 @@ print("Vitesse: " .. speed)
 
 Bon. ça n'a pas été facile, surtout que pour le coup, même chatGpt me disait de la merde et me demandait de fouiller là où ça n'avait pas trop de sens...Il me demendait de passer par cheatEngine pour trouver les adresses, alors que Desmume a un outil pour rechercher les adresses en temps réel (comme cheatEngine quoi. Mais en mieux pour notre partie). Étant donné que je recherchais juste la vitesse pour ce matin (histoire de faire le test), je me suis amusé à rester sur place, cherchais la valeur par 0, avancer, rechercher une valeur supérieur à 0. Bref, en boucle histoire qu'il nous reste 20 adresses. Puis...J'ai procéddé par élimination. Le résultat est concluant et j'ai trouvé ma bonne adresse. Le "hic", c'est que dans mon script LUA, qui devrait m'afficher la vitesse entre -40(marche arrière) et 120 ? (marche avant), il considère la marche arrière comme étant entre 200 et 240. Mais bon, avec une bonne condition dans notre futur code, j'imagine que cela ne sera pas un problème. Reste plus qu'à faire pour nos autres paramètres de "bases" (tourner, et...Sans objets de bases.)
 
-![alt text](https://github.com/Andraaz/ia-mario-kart/README.md/image.jpg?raw=true)
+![alt text](https://github.com/ia-mario-kart/blob/main/RAM WATCH.png)
 
 
 
