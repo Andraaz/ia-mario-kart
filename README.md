@@ -4,7 +4,7 @@
 
 Projet personnel qui a pour but d'utiliser l'apprentissage renforcé sur le jeu mario kart (DS). Étant en plein 
 apprentissage dans le domaine(l'IA), il y a de forte chance que je me mange des murs...Je les noterais tout au 
-long de ce readme.
+long de ce readme. Par ailleurs, ce readme est comme un journal de bord. Si vous désirez quelque chose de plus propre et rapide...Un fichier "conclusion.md" doit être sur le repo. Cela sera moins brouillon que ce qu'il se trouve dans ma tête.
 
 ## Premier test. 08/04/2023 -- 22h40
 
@@ -21,9 +21,20 @@ print("Vitesse: " .. speed)
 
 # Deuxième test. À la recherche des adresses ! 09/04/2023 - 9h45
 
-Bon. ça n'a pas été facile, surtout que pour le coup, même chatGpt me disait de la merde et me demandait de fouiller là où ça n'avait pas trop de sens...Il me demendait de passer par cheatEngine pour trouver les adresses, alors que Desmume a un outil pour rechercher les adresses en temps réel (comme cheatEngine quoi. Mais en mieux pour notre partie). Étant donné que je recherchais juste la vitesse pour ce matin (histoire de faire le test), je me suis amusé à rester sur place, cherchais la valeur par 0, avancer, rechercher une valeur supérieur à 0. Bref, en boucle histoire qu'il nous reste 20 adresses. Puis...J'ai procéddé par élimination. Le résultat est concluant et j'ai trouvé ma bonne adresse. Le "hic", c'est que dans mon script LUA, qui devrait m'afficher la vitesse entre -40(marche arrière) et 120 ? (marche avant), il considère la marche arrière comme étant entre 200 et 240. Mais bon, avec une bonne condition dans notre futur code, j'imagine que cela ne sera pas un problème. Reste plus qu'à faire pour nos autres paramètres de "bases" (tourner, et...Sans objets de bases.)
+Bon. ça n'a pas été facile, surtout que pour le coup, même chatGpt me disait de la merde et me demandait de fouiller là où ça n'avait pas trop de sens...Il me demendait de passer par cheatEngine pour trouver les adresses, alors que Desmume a un outil pour rechercher les adresses en temps réel (comme cheatEngine quoi. Mais en mieux pour notre partie). Étant donné que je recherchais juste la vitesse pour ce matin (histoire de faire le test), je me suis amusé à rester sur place, cherchais la valeur par 0, avancer, rechercher une valeur supérieur à 0. Bref, en boucle histoire qu'il nous reste 20 adresses. Puis...J'ai procéddé par élimination. Le résultat est concluant et j'ai trouvé ma bonne adresse. Le "hic", c'est que dans mon script LUA, qui devrait m'afficher la vitesse entre -40(marche arrière) et 120 ? (marche avant), il considère la marche arrière comme étant entre 200 et 240. Mais bon, avec une bonne condition dans notre futur code, j'imagine que cela ne sera pas un problème. Reste plus qu'à faire pour nos autres variables d'environement (tourner, et...Sans objets de bases.)
 
 
 ![RAM WATCH](https://user-images.githubusercontent.com/68385783/230762836-9716b773-988e-44a3-917d-85f460431ad2.png)
 
+Je me suis fait un tableau de ce que je devais rechercher en plus des contrôles de base du véhicule. 
 
+| Environnement     | Type  | Description                                   |
+|-------------------|-------|-----------------------------------------------|
+| Vitesse           | int   | Avancer, reculer                              |
+| Tourner à droite  | int   | Angle                                         |
+| Tourner à gauche  | int   | Angle                                         |
+| Carte ?           | List  | ??? Comment indiquer les obstacles ?          |
+| Position          | List  | Position du joueur sur la carte ? sur X,Y,Z ? |
+| Ligne d'arrivée   | List  | Position de la ligne d'arrivée                |
+
+  
