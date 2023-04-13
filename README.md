@@ -3,8 +3,8 @@
 #Description du projet 
 
 Projet personnel qui a pour but d'utiliser l'apprentissage renforcé sur le jeu mario kart (DS). Étant en plein 
-apprentissage dans le domaine(l'IA), il y a de forte chance que je me mange des murs...Je les noterais tout au 
-long de ce readme. Par ailleurs, ce readme est comme un journal de bord. Si vous désirez quelque chose de plus propre et rapide...Un fichier "conclusion.md" doit être sur le repo. Cela sera moins brouillon que ce qu'il se trouve dans ma tête.
+apprentissage dans le domaine(l'IA), il y a de fortes chances que je me mange des murs...Je les noterais tout au 
+long de ce readme tel un petit journal de bord. À la fin de mon projet je ferais bien entendu un fichier "conclusion.md" qui a pour but d'expliquer le procéder, mais également la "logique" de manière rapide, simple, concis. Pour ce qui est de ce readme...Il faut plus le voir comme un défouloir pour ma pensée, à défaut d'avoir quelqu'un à qui partager l'un de mes loisirs.
 
 ## Premier test. 08/04/2023 -- 22h40
 
@@ -38,3 +38,11 @@ Je me suis fait un tableau de ce que je devais rechercher en plus des contrôles
 | Ligne d'arrivée   | List  | Position de la ligne d'arrivée                |
 
   
+# Troisième test. Position X,Y introuvable ! 10/04/2023 - 11h05 
+
+Je dois avouer que je bloque. À la base, je cherchais à coordonner la première map du jeu...Mais ce fut bien trop difficile. Alors je me suis dit que juste la position du joueur serait suffisant. Après tout, si dans mes récompenses j'indique que baisser de vitesse fait perdre des points, alors à force de se manger des murs, il "s'inventera" sa propre carte, non ? 
+Quoi qu'il en soit, je n'arrive pas à trouver la position X et Y du joueur quelque soit la map.
+
+# Quatrième test. On a l'environnement ! Enfin...Le strict minimum ! 13/04/2023 - 22h27
+
+Bon, je pensais que cela allait être impossible, mais en regardant de plus près, j'ai réussi ce que je pensais être l'axe Y. L'axe X de son côté, me semble peu cohérent...(Valeur à environ 200 sur la ligne de départ ?). D'ailleurs, en prime j'ai par hasard trouvé le pourcentage de la course (plus vous vous rapproché de la ligne d'arrivé, plus la valeur augmente, et inversement). Autant dire que c'est une adresse en or pour calculer les récompenses ! Voilà le fichier LUA que j'ai rédigé. Comme je l'ai écrit, c'est le strict minimum. Pas d'item, de dérapage, etc...Pour la prochaine fois, je chercherais comment relier ce LUA à un fichier python pour commencer le gros du code.
