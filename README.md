@@ -46,3 +46,6 @@ Quoi qu'il en soit, je n'arrive pas à trouver la position X et Y du joueur quel
 # Quatrième test. On a l'environnement ! Enfin...Le strict minimum ! 13/04/2023 - 22h27
 
 Bon, je pensais que cela allait être impossible, mais en regardant de plus près, j'ai réussi ce que je pensais être l'axe Y. L'axe X de son côté, me semble peu cohérent...(Valeur à environ 200 sur la ligne de départ ?). D'ailleurs, en prime j'ai par hasard trouvé le pourcentage de la course (plus vous vous rapproché de la ligne d'arrivé, plus la valeur augmente, et inversement). Autant dire que c'est une adresse en or pour calculer les récompenses ! Voilà le fichier LUA que j'ai rédigé. Comme je l'ai écrit, c'est le strict minimum. Pas d'item, de dérapage, etc...Pour la prochaine fois, je chercherais comment relier ce LUA à un fichier python pour commencer le gros du code.
+
+![Capture d'écran 2023-04-13 224032](https://user-images.githubusercontent.com/68385783/231878252-7daf1288-dd88-4067-989d-fd00c962941b.png)
+
